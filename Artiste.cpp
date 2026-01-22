@@ -23,7 +23,7 @@ std::ostream& operator<<(std::ostream& os, const std::vector <std::string>& v)
 {
 	for (const auto spe : v)
 	{
-		os << spe ;
+		os << spe;
 	}
 	return os;
 }

@@ -1,5 +1,5 @@
 #include "oeuvre.h"
-Oeuvre::Oeuvre(std::string nom, std::string type) : nom_(nom), type_(type) {}
+Oeuvre::Oeuvre(std::string nom, std::string type) : nom_(nom), type_(type) , artiste_ = {}
 
 std::string Oeuvre::getnom() const
 {
@@ -24,4 +24,9 @@ std::ostream& operator<<(std::ostream& os, std::vector <Oeuvre>& oe)
 		os << i;
 	}
 	return os;
+}
+
+void Oeuvre::setartiste(Artiste artiste)
+{
+	artiste_ = artiste;
 }
