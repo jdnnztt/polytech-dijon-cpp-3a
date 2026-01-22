@@ -20,3 +20,9 @@ Salle Expo::getsalle() const
 {
 	return salle_;
 }
+
+std::ostream& operator<<(std::ostream& os, const Expo& ex)
+{
+	os << "L'exposition " << ex.getnom() << " a lieu dans la salle : " << ex.getsalle() << " ,elle presentera les oeuvres : " << ex.getoeuvre();
+	return os;
+}

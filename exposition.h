@@ -10,6 +10,7 @@ public:
 	std::string getdate() const;
 	std::vector <Oeuvre> getoeuvre() const;
 	Salle getsalle() const;
+	friend std::ostream& operator<<(std::ostream& os, const Expo& ex);
 private:
 	std::string nom_;
 	std::string date_;

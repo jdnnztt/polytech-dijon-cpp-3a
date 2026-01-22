@@ -5,3 +5,9 @@ std::string Salle::getnom() const
 {
 	return nom_;
 }
+
+std::ostream& operator<<(std::ostream& os, const Salle& sa)
+{
+	os << sa.getnom();
+	return os;
+}

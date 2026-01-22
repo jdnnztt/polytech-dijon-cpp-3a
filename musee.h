@@ -10,6 +10,11 @@ public:
 	Musee(std::string nom);
 	std::string getnom() const;
 	void newexpo(Expo expo);
+	void newsalle(Salle salle);
+	void newartiste(Artiste artiste);
+	void newoeuvre(Oeuvre oeuvre);
+	Oeuvre findoeuvre(Oeuvre oeuvre);
+	void deleteoeuvre(Oeuvre oeuvre);
 private:
 	std::string nom_;
 	std::vector <Artiste> liste_artiste;
