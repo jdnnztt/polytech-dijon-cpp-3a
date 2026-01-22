@@ -18,3 +18,10 @@ void Artiste::addspecialite(std::string spe)
 {
 	liste_specialite.push_back(spe);
 }
+
+std::ostream& operator<<(std::ostream& os, const std::vector <std::string>& v)
+{
+	for (const auto spe : v)
+		os << spe;
+	return os;
+}

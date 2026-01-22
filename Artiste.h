@@ -9,6 +9,7 @@ public:
 	std::string getnom() const;
 	std::vector <std::string> getspecialite() const;
 	void addspecialite(std::string spe);
+	friend std::ostream& operator<<(std::ostream& os, const std::vector <std::string>& v);
 private:
 	std::string nom_;
 	std::string specialite_;
