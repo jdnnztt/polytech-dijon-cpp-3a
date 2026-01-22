@@ -21,9 +21,9 @@ void Artiste::addspecialite(std::string spe)
 
 std::ostream& operator<<(std::ostream& os, const std::vector <std::string>& v)
 {
-	for (const auto spe : v)
+	for (auto spe : v)
 	{
-		os << spe;
+		os << spe ;
 	}
 	return os;
 }
