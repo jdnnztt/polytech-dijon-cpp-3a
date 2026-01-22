@@ -26,20 +26,17 @@ void Musee::newoeuvre(Oeuvre oeuvre)
 	liste_oeuvre.push_back(oeuvre);
 }
 
-Oeuvre Musee::findoeuvre(Oeuvre oeuvre)
-{
+//Oeuvre Musee::findoeuvre(Oeuvre oeuvre)
+//{
 	
-	for (const auto o : liste_oeuvre)
-	{
-		if (o.getnom() == oeuvre.getnom())
-		{
-			;
-		}
-	}
-	return ;
-}
+//	for (const auto o : liste_oeuvre)
+//	{
+//		if (o.getnom() == oeuvre.getnom())
+//		{
+//		;
+//		}
+//	}
+//	return ;
+//}
 
-void deleteoeuvre(Oeuvre oeuvre)
-{
-
-}
+//void deleteoeuvre(Oeuvre oeuvre) {}
